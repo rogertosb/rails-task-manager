@@ -1,0 +1,11 @@
+<h1> Your task</h1>
+  <h2><%= @task.title %></h2>
+    <h4><%= @task.details %></h4>
+      <% if @task.completed %>
+        <h2> <i class="icon-check"></i> </h2>
+      <% else%>
+        <h2> <i class="icon-check-empty"></i> </<h2></h2>>
+      <% end %>
+
+   <%= link_to "Go back to tasks overview you silly fox", tasks_path %>
+  <%= link_to "Edit your task", edit_path %>
