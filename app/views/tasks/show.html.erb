@@ -9,3 +9,6 @@
 
    <%= link_to "Go back to tasks overview you silly fox", tasks_path %>
   <%= link_to "Edit your task", edit_path %>
+  <%= link_to "Delete", task_path,
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
